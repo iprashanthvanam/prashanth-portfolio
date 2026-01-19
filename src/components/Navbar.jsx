@@ -19,6 +19,7 @@
 
 
 import { FaGraduationCap, FaBriefcase, FaLaptopCode, FaEnvelope, FaTools } from "react-icons/fa";
+import { FaBeer } from 'react-icons/fa'; // Example icon
 
 export default function Navbar() {
   return (
