@@ -70,6 +70,33 @@ const achievementsData = [
     image: "https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg",
     logoBg: "#ffffff" // White background for logo
   }
+   {
+    title: "ServiceNow System Administrator Certification",
+    org: "ServiceNow",
+    date: "July, 2025",
+    category: "System Administration",
+    // ServiceNow Logo URL
+    image: "https://upload.wikimedia.org/wikipedia/commons/1/1c/ServiceNow_logo.svg", 
+    logoBg: "#1a2b3c" // Dark Blue background for logo
+  },
+  {
+    title: "Oracle Data Platform 2025 Certified Foundations Associate",
+    org: "Oracle",
+    date: "July, 2025 - July, 2027",
+    category: "Database Management",
+    // Oracle Logo URL
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg",
+    logoBg: "#ffffff" // White background for logo
+  },
+  {
+    title: "Oracle Cloud Infrastructure 2025 Certified Foundations Associate",
+    org: "Oracle",
+    date: "Aug, 2025 - Aug, 2027",
+    category: "Database Management",
+    // Oracle Logo URL
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg",
+    logoBg: "#ffffff" // White background for logo
+  }
 ];
 
 export default function Achievements() {
