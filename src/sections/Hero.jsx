@@ -237,6 +237,96 @@
 
 
 
+// import useScrollAnimation from "../hooks/useScrollAnimation";
+// import profile from "../assets/profile.jpeg";
+
+// export default function Hero() {
+//   const ref = useScrollAnimation();
+
+//   const handleDownloadCV = () => {
+//     const cvUrl = "/Prashanth_CV.pdf";
+//     const link = document.createElement("a");
+//     link.href = cvUrl;
+//     link.download = "Vanam_Prashanth_CV.pdf";
+//     document.body.appendChild(link);
+//     link.click();
+//     document.body.removeChild(link);
+//   };
+
+//   const handleContactScroll = () => {
+//     document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+//   };
+
+//   return (
+//     <section ref={ref} className="hero-section animate show">
+      
+//       {/* --- IMAGE (Now First = Left Side) --- */}
+//       <div className="hero-right">
+//         <div className="hero-img-wrapper">
+//           <img src={profile} alt="Vanam Prashanth" />
+//         </div>
+//       </div>
+
+//       {/* --- TEXT CONTENT (Now Second = Right Side) --- */}
+//       <div className="hero-left">
+//         <h1 className="hero-name">V Prashanth</h1>
+        
+//         <p className="hero-desc">
+//           B.Tech CSE student with an ECE background seeking an entry-level
+//           Software role. Eager to apply strong analytical skills, data handling
+//           knowledge, and technical acumen to deliver impactful insights and
+//           practical solutions.
+//         </p>
+
+//         <div className="hero-actions">
+//           <div className="hero-buttons">
+//             <button className="btn btn-primary" onClick={handleDownloadCV}>
+//               Download CV
+//             </button>
+//             <button className="btn btn-outline" onClick={handleContactScroll}>
+//               Contact
+//             </button>
+//           </div>
+
+//           <div className="hero-socials">
+//             <a href="https://www.linkedin.com/in/iprashanthvanam/" target="_blank" rel="noopener noreferrer">
+//               <img src="/linkedin.svg" alt="LinkedIn" />
+//             </a>
+//             <a href="https://github.com/iprashanthvanam/" target="_blank" rel="noopener noreferrer">
+//               <img src="/github.svg" alt="GitHub" />
+//             </a>
+//             <a href="https://leetcode.com/u/iprashanthvanam/" target="_blank" rel="noopener noreferrer">
+//               <img src="/leetcode.svg" alt="LeetCode" />
+//             </a>
+//           </div>
+//         </div>
+//       </div>
+
+//     </section>
+//   );
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import useScrollAnimation from "../hooks/useScrollAnimation";
 import profile from "../assets/profile.jpeg";
 
@@ -244,10 +334,13 @@ export default function Hero() {
   const ref = useScrollAnimation();
 
   const handleDownloadCV = () => {
-    const cvUrl = "/Prashanth_CV.pdf";
+    // 1. UPDATE THIS LINE TO MATCH YOUR ACTUAL FILENAME
+    const cvUrl = "/vanamprashanth.pdf"; 
+
     const link = document.createElement("a");
     link.href = cvUrl;
-    link.download = "Vanam_Prashanth_CV.pdf";
+    // This is the name the file will have when saved to the user's computer
+    link.download = "Vanam_Prashanth_CV.pdf"; 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -260,14 +353,14 @@ export default function Hero() {
   return (
     <section ref={ref} className="hero-section animate show">
       
-      {/* --- IMAGE (Now First = Left Side) --- */}
+      {/* --- IMAGE (Left Side) --- */}
       <div className="hero-right">
         <div className="hero-img-wrapper">
           <img src={profile} alt="Vanam Prashanth" />
         </div>
       </div>
 
-      {/* --- TEXT CONTENT (Now Second = Right Side) --- */}
+      {/* --- TEXT CONTENT (Right Side) --- */}
       <div className="hero-left">
         <h1 className="hero-name">V Prashanth</h1>
         
