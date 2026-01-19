@@ -69,7 +69,7 @@ const achievementsData = [
     // Oracle Logo URL
     image: "https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg",
     logoBg: "#ffffff" // White background for logo
-  }
+  },
    {
     title: "ServiceNow System Administrator Certification",
     org: "ServiceNow",
