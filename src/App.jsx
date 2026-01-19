@@ -73,7 +73,7 @@ import "./App.css";
 export default function App() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
       <Education />
       <Skills />
