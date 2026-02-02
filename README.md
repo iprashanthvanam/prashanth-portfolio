@@ -92,33 +92,49 @@ This separation allows:
 
 ## Installation & Setup
 
-```bash
+
 ### 1️⃣ Clone the Repository
+```
 git clone https://github.com/iprashanthvanam/prashanth-portfolio.git
+```
+```
 cd prashanth-portfolio
+``` 
 
 ### 2️⃣ Install Dependencies:
+```
 npm install
+```
 
 ### 3️⃣ Start Development Server:
+```
 npm run dev
+```
 
 ### App runs at:
+```
 http://localhost:5173
+```
 
 ### Build for Production:
+```
 npm run build
+```
 
 ### Preview production build:
+```
 npm run preview
+```
 
 ### Deployment:
 The project is configured for Vercel deployment.
+```
 {
   "outputDirectory": "dist"
 }
+```
 
 ### Steps:
-Push code to GitHub
-Import repository in Vercel
-Deploy 🚀
+- Push code to GitHub
+- Import repository in Vercel
+- Deploy 🚀
