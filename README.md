@@ -77,7 +77,7 @@ This ensures:
 
 ## Local Setup & Installation
 
-### 1️⃣ Clone the Repository
+### 1️Clone the Repository
 ```
 git clone https://github.com/iprashanthvanam/prashanth-portfolio.git
 ```
@@ -85,12 +85,12 @@ git clone https://github.com/iprashanthvanam/prashanth-portfolio.git
 cd prashanth-portfolio
 ``` 
 
-### 2️⃣ Install Dependencies:
+### 2️Install Dependencies:
 ```
 npm install
 ```
 
-### 3️⃣ Start Development Server:
+### 3️Start Development Server:
 ```
 npm run dev
 ```
