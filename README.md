@@ -1,94 +1,81 @@
-# Personal Portfolio Website
+# 🌐 Personal Portfolio Website
 
-**Full Project Documentation & README**  
-**Last updated:** Jan 2026  
-**Author:** Prashanth  
-**Project Type:** Personal Portfolio Website  
-**Tech Stack:** React + Vite  
+🔗 **Live Application:** https://prashanth-portfolio-phi.vercel.app/   
 
 ---
 
-## Project Overview
+## 📌 Project Overview
 
-This project is a **modern, responsive personal portfolio website** built to showcase my profile, skills, education, experience, projects, and achievements in a clean and visually engaging format.
+This is my **personal portfolio website**, built to professionally showcase my:
 
-The website is designed with smooth animations, reusable components, and a structured data-driven approach, making it easy to maintain and scale.
+- Profile & background
+- Technical skills
+- Education timeline
+- Projects & live demos
+- Achievements & certifications
+- Contact information
 
-It serves as:
-- A professional online resume
-- A project showcase platform
-- A personal branding website
-
----
-
-## Features
-
-- **Hero Section:** Profile introduction with downloadable CV
-- **Education Timeline:** Academic background display
-- **Skills Showcase:** Auto-scrolling skills marquee with icons
-- **Experience Section:** Internship and work experience
-- **Projects Gallery:** Project cards with GitHub & live demo links
-- **Achievements Section:** Certifications and accomplishments
-- **Contact Form:** User-friendly contact interface
-- **Smooth Animations:** Scroll-based reveal animations
-- **Responsive Design:** Works across desktop & mobile devices
-- **Scroll-to-Top Button:** Improved navigation experience
+The portfolio is designed with a **modern UI**, smooth animations, and a fully responsive layout, making it suitable for recruiters, interviewers, and professional networking.
 
 ---
 
-## Tech Stack
+## ✨ Key Features
 
-| Layer | Technology | Purpose |
-|-----|-----------|--------|
-| **Frontend** | React 19 | Component-based UI |
-| **Build Tool** | Vite | Fast development & build |
-| **Styling** | CSS3 | Custom responsive styling |
-| **Icons** | react-icons | UI & skill icons |
-| **Animations** | IntersectionObserver API | Scroll animations |
-| **Deployment** | Vercel | Production hosting |
-
----
-
-## Component Overview
-
-### Core Components
-- **Navbar:** Section navigation with icons
-- **ScrollTop:** Floating button for smooth scroll to top
-
-### Sections
-- **Hero:** Profile intro, CV download, social links
-- **Education:** Academic history cards
-- **Skills:** Infinite scrolling skill icons
-- **Experience:** Internship & work experience
-- **Projects:** Project cards with tech stack
-- **Achievements:** Certifications & recognitions
-- **Contact:** Contact form & social links
+- 🧑‍💼 **Hero Section** – Introduction with resume download
+- 🎓 **Education Timeline** – Academic journey displayed visually
+- 🛠️ **Expertise Section** – Skill categories with technology stacks
+- 💼 **Projects Showcase** – Real-world projects with GitHub & demo links
+- 🏆 **Achievements** – Certifications & accomplishments
+- 📬 **Contact Section** – Easy communication
+- 🎨 **Smooth Animations** – Scroll-based reveal effects
+- 📱 **Fully Responsive** – Works on mobile, tablet & desktop
+- ⚡ **Fast Performance** – Optimized build using Vite
 
 ---
 
-## Data-Driven Design
+## 🧰 Tech Stack
 
-All dynamic content is stored separately in `/src/data`:
+| Category | Technology |
+|--------|------------|
+| Frontend | React (TypeScript) |
+| Build Tool | Vite |
+| Styling | CSS3 / SCSS |
+| UI Components | Material UI |
+| Icons | FontAwesome |
+| Animations | Intersection Observer API |
+| Version Control | Git & GitHub |
+| Deployment | Vercel |
 
-- `education.js` → Academic details
-- `experience.js` → Internship/work data
-- `projects.js` → Project metadata
-- `skills.js` → Skill list
 
-This separation allows:
-- Easy updates
+---
+
+## 📊 Data-Driven Architecture
+
+All portfolio content is stored separately for easy updates:
+
+- `skills.ts` → Technical skills
+- `projects.ts` → Project details
+- `education.ts` → Academic history
+- `experience.ts` → Internship & experience data
+
+This ensures:
 - Clean components
-- Better scalability
+- Easy scalability
+- No hardcoded UI data
 
 ---
 
-## Animations & UX
+## 🎯 Performance & UX
 
-- Scroll animations powered by **IntersectionObserver**
-- CSS-based transitions for hover & reveal effects
-- Animation-safe performance (no heavy libraries)
+- ⚡ Fast load times using Vite
+- 🎥 Lightweight animations (no heavy libraries)
+- 🔍 SEO-friendly structure
+- 🧠 Accessible & readable UI
+- 🧼 Clean component separation
 
 ---
+
+## 🖥️ Local Setup & Installation
 
 ## Installation & Setup
 
