@@ -4,7 +4,7 @@
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 This is my **personal portfolio website**, built to professionally showcase my:
 
@@ -19,21 +19,21 @@ The portfolio is designed with a **modern UI**, smooth animations, and a fully r
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-- 🧑‍💼 **Hero Section** – Introduction with resume download
-- 🎓 **Education Timeline** – Academic journey displayed visually
-- 🛠️ **Expertise Section** – Skill categories with technology stacks
-- 💼 **Projects Showcase** – Real-world projects with GitHub & demo links
-- 🏆 **Achievements** – Certifications & accomplishments
-- 📬 **Contact Section** – Easy communication
-- 🎨 **Smooth Animations** – Scroll-based reveal effects
-- 📱 **Fully Responsive** – Works on mobile, tablet & desktop
-- ⚡ **Fast Performance** – Optimized build using Vite
+-  **Hero Section** – Introduction with resume download
+-  **Education Timeline** – Academic journey displayed visually
+-  **Expertise Section** – Skill categories with technology stacks
+-  **Projects Showcase** – Real-world projects with GitHub & demo links
+-  **Achievements** – Certifications & accomplishments
+-  **Contact Section** – Easy communication
+-  **Smooth Animations** – Scroll-based reveal effects
+-  **Fully Responsive** – Works on mobile, tablet & desktop
+-  **Fast Performance** – Optimized build using Vite
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 | Category | Technology |
 |--------|------------|
@@ -49,7 +49,7 @@ The portfolio is designed with a **modern UI**, smooth animations, and a fully r
 
 ---
 
-## 📊 Data-Driven Architecture
+## Data-Driven Architecture
 
 All portfolio content is stored separately for easy updates:
 
@@ -65,7 +65,7 @@ This ensures:
 
 ---
 
-## 🎯 Performance & UX
+## Performance & UX
 
 - ⚡ Fast load times using Vite
 - 🎥 Lightweight animations (no heavy libraries)
@@ -75,10 +75,7 @@ This ensures:
 
 ---
 
-## 🖥️ Local Setup & Installation
-
-## Installation & Setup
-
+## Local Setup & Installation
 
 ### 1️⃣ Clone the Repository
 ```
