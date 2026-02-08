@@ -123,3 +123,54 @@ The project is configured for Vercel deployment.
 - Push code to GitHub
 - Import repository in Vercel
 - Deploy 🚀
+
+
+
+<h2 align="center">🏠 Portfolio – Hero Section</h2>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/iprashanthvanam/prashanth-portfolio/main/src/images/Screenshot%202026-02-08%20173635.png" width="60%" />
+ 
+</p>
+
+
+
+<h2 align="center">🎓 Education</h2>
+
+<p align="center">
+   <img src="https://raw.githubusercontent.com/iprashanthvanam/prashanth-portfolio/main/src/images/Screenshot%202026-02-08%20173652.png" width="60%" />
+ 
+</p>
+
+
+
+<h2 align="center">🛠 Skills</h2>
+
+<p align="center">
+   <img src="https://raw.githubusercontent.com/iprashanthvanam/prashanth-portfolio/main/src/images/Screenshot%202026-02-08%20173711.png" width="60%" />
+
+</p>
+
+
+
+<h2 align="center">🚀 Projects</h2>
+
+<p align="center">
+    <img src="https://raw.githubusercontent.com/iprashanthvanam/prashanth-portfolio/main/src/images/Screenshot%202026-02-08%20173742.png" width="60%" />
+ 
+
+</p>
+
+
+
+<h2 align="center">🏆 Achievements</h2>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/iprashanthvanam/prashanth-portfolio/main/src/images/Screenshot%202026-02-08%20173757.png" width="60%" />
+</p>
+
+<h2 align="center">📞 Contact</h2>
+
+<p align="center">
+   <img src="https://raw.githubusercontent.com/iprashanthvanam/prashanth-portfolio/main/src/images/Screenshot%202026-02-08%20173805.png" width="60%" />
+</p>
