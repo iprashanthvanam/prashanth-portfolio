@@ -1,10 +1,11 @@
-# 🌐 Personal Portfolio Website
+###  Personal Portfolio Website
 
-🔗 **Live Application:** https://prashanth-portfolio-phi.vercel.app/   
+Live Application
+https://prashanth-portfolio-phi.vercel.app/   
 
 
 
-## Project Overview
+### Project Overview
 
 This is my **personal portfolio website**, built to professionally showcase my:
 
@@ -19,7 +20,7 @@ The portfolio is designed with a **modern UI**, smooth animations, and a fully r
 
 ---
 
-## Key Features
+### Key Features
 
 -  **Hero Section** – Introduction with resume download
 -  **Education Timeline** – Academic journey displayed visually
@@ -33,7 +34,7 @@ The portfolio is designed with a **modern UI**, smooth animations, and a fully r
 
 ---
 
-## Tech Stack
+### Tech Stack
 
 | Category | Technology |
 |--------|------------|
@@ -49,7 +50,7 @@ The portfolio is designed with a **modern UI**, smooth animations, and a fully r
 
 ---
 
-## Data-Driven Architecture
+### Data-Driven Architecture
 
 All portfolio content is stored separately for easy updates:
 
@@ -65,7 +66,7 @@ This ensures:
 
 ---
 
-## Performance & UX
+### Performance & UX
 
 - ⚡ Fast load times using Vite
 - 🎥 Lightweight animations (no heavy libraries)
@@ -75,9 +76,9 @@ This ensures:
 
 ---
 
-## Local Setup & Installation
+### Local Setup & Installation
 
-### 1️Clone the Repository
+Clone the Repository
 ```
 git clone https://github.com/iprashanthvanam/prashanth-portfolio.git
 ```
@@ -85,20 +86,20 @@ git clone https://github.com/iprashanthvanam/prashanth-portfolio.git
 cd prashanth-portfolio
 ``` 
 
-### 2️Install Dependencies:
+Install Dependencies:
 ```
 npm install
 ```
 
-### 3️Start Development Server:
+Start Development Server:
 ```
 npm run dev
 ```
-
-### App runs at:
+App runs at:
 ```
 http://localhost:5173
 ```
+---
 
 ### Build for Production:
 ```
