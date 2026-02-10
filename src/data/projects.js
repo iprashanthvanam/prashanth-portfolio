@@ -27,6 +27,6 @@ export const projects = [
     desc: "A tool that analyzes text similarity against a database to detect content duplication.",
     tech: ["Python", "React", "Node.js"],
     github: "https://github.com/iprashanthvanam/plagiarism_analysis_app",
-    demo: "https://plagiarism-analysis-app.vercel.app/"
+    demo: "https://plagiarismanalyser-d8a6d0f9f2deczhn.southindia-01.azurewebsites.net/"
   }
 ];
