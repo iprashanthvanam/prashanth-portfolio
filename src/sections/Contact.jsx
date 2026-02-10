@@ -1,26 +1,3 @@
-// export default function Contact() {
-//   return (
-//     <section id="contact">
-//       <h2 className="section-title">Contact</h2>
-
-//       <p>Email: deepuchary03@gmail.com</p>
-//       <p>Phone: +91 0123456789</p>
-//       <p>Location: Nagar Kurnool, Telangana</p>
-
-//       <p style={{ marginTop: "40px" }}>
-//         Made with ❤️ by S Pranav
-//       </p>
-//     </section>
-//   );
-// }
-
-
-
-
-
-
-
-
 
 
 
@@ -28,7 +5,7 @@
 
 
 // import useScrollAnimation from "../hooks/useScrollAnimation";
-// import { FaPaperPlane, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaGithub, FaLinkedinIn, FaInstagram, FaCode } from "react-icons/fa";
+// import { FaPaperPlane, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaGithub, FaLinkedinIn, FaCode } from "react-icons/fa";
 
 // export default function Contact() {
 //   const ref = useScrollAnimation();
@@ -49,20 +26,20 @@
           
 //           {/* Name Input */}
 //           <div className="input-group">
+//             <input type="text" id="name" placeholder=" " required />
 //             <label htmlFor="name">Name</label>
-//             <input type="text" id="name" placeholder="John Doe" required />
 //           </div>
 
 //           {/* Email Input */}
 //           <div className="input-group">
+//             <input type="email" id="email" placeholder=" " required />
 //             <label htmlFor="email">Email</label>
-//             <input type="email" id="email" placeholder="John@doe.com" required />
 //           </div>
 
 //           {/* Message Input */}
 //           <div className="input-group">
+//             <textarea id="message" rows="5" placeholder=" " required></textarea>
 //             <label htmlFor="message">Message</label>
-//             <textarea id="message" rows="5" placeholder="Type your message...." required></textarea>
 //           </div>
 
 //           {/* Send Button */}
@@ -100,14 +77,11 @@
 
 //           {/* Social Icons Row */}
 //           <div className="social-links-row">
-//              <a href="#" className="social-circle"><FaGithub /></a>
-//              <a href="#" className="social-circle"><FaLinkedinIn /></a>
-//              <a href="#" className="social-circle"><FaCode /></a> 
-             
+//              <a href="https://github.com/iprashanthvanam" target="_blank" rel="noopener noreferrer" className="social-circle"><FaGithub /></a>
+//              <a href="https://www.linkedin.com/in/iprashanthvanam/" target="_blank" rel="noopener noreferrer" className="social-circle"><FaLinkedinIn /></a>
+//              <a href="https://leetcode.com/u/iprashanthvanam/" target="_blank" rel="noopener noreferrer" className="social-circle"><FaCode /></a> 
 //           </div>
 
-        
-          
 //         </div>
 //       </div>
 
@@ -123,19 +97,40 @@
 
 
 
-
-
-
-
+import { useState } from "react";
 import useScrollAnimation from "../hooks/useScrollAnimation";
 import { FaPaperPlane, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaGithub, FaLinkedinIn, FaCode } from "react-icons/fa";
 
 export default function Contact() {
   const ref = useScrollAnimation();
+  const [result, setResult] = useState(""); // To store status message
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert("Message Sent! (This is a demo)");
+    setResult("Sending....");
+    
+    const formData = new FormData(e.target);
+
+    // 1. ADD YOUR ACCESS KEY HERE
+    // Replace 'YOUR_ACCESS_KEY_HERE' with the key you got from Web3Forms
+    formData.append("access_key", "da598b70-c33f-411f-9573-a3511ca8cfe4");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully!");
+      e.target.reset(); // Clear the form
+      // Optional: Clear success message after 5 seconds
+      setTimeout(() => setResult(""), 5000);
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
   };
 
   return (
@@ -149,26 +144,37 @@ export default function Contact() {
           
           {/* Name Input */}
           <div className="input-group">
-            <input type="text" id="name" placeholder=" " required />
+            {/* Added 'name' attribute which is required for the API */}
+            <input type="text" id="name" name="name" placeholder=" " required />
             <label htmlFor="name">Name</label>
           </div>
 
           {/* Email Input */}
           <div className="input-group">
-            <input type="email" id="email" placeholder=" " required />
+            <input type="email" id="email" name="email" placeholder=" " required />
             <label htmlFor="email">Email</label>
           </div>
 
           {/* Message Input */}
           <div className="input-group">
-            <textarea id="message" rows="5" placeholder=" " required></textarea>
+            <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
             <label htmlFor="message">Message</label>
           </div>
 
+          {/* Hidden Input to redirect/configure (Optional, kept simple for now) */}
+          <input type="hidden" name="subject" value="New Portfolio Contact Message" />
+
           {/* Send Button */}
           <button type="submit" className="send-btn">
-            Send <FaPaperPlane className="send-icon" />
+            {result === "Sending...." ? "Sending..." : "Send"} <FaPaperPlane className="send-icon" />
           </button>
+
+          {/* Success/Error Message Display */}
+          {result && (
+            <p style={{ marginTop: "15px", color: result.includes("Success") ? "#00f2fe" : "red", fontWeight: "bold", textAlign: "center" }}>
+              {result}
+            </p>
+          )}
         </form>
 
         {/* --- RIGHT SIDE: INFO & SOCIALS --- */}
