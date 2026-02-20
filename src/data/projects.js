@@ -19,7 +19,7 @@ export const projects = [
     desc: "A web platform connecting pet adopters with shelters, featuring profile management and search.",
     tech: ["Python", "Django", "dqlite"],
     github: "https://github.com/iprashanthvanam/the_pet_portal",
-    demo: "https://prashanthvanam.pythonanywhere.com/home/"
+    demo: "https://thepetportal.pythonanywhere.com/"
   },
   {
     title: "Plagiarism Analysis Application",
