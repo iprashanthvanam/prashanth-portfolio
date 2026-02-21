@@ -335,12 +335,12 @@ export default function Hero() {
 
   const handleDownloadCV = () => {
     // 1. UPDATE THIS LINE TO MATCH YOUR ACTUAL FILENAME
-    const cvUrl = "/vanamprashanth.pdf"; 
+    const cvUrl = "/VANAM PRASHANTH SDE.pdf"; 
 
     const link = document.createElement("a");
     link.href = cvUrl;
     // This is the name the file will have when saved to the user's computer
-    link.download = "Vanam_Prashanth_CV.pdf"; 
+    link.download = "VANAM PRASHANTH SDE.pdf"; 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
