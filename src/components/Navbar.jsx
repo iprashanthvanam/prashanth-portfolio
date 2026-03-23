@@ -1,124 +1,62 @@
-// export default function Navbar() {
-//   return (
-//     <nav className="navbar">
-//       <h2>VANAM PRASHANTH</h2>
-//       <ul>
-//         <li><a href="#education">Education</a></li>
-//         <li><a href="#skills">Skills</a></li>
-//         <li><a href="#experience">Experience</a></li>
-//         <li><a href="#projects">Projects</a></li>
-//         <li><a href="#contact">Contact</a></li>
-//       </ul>
-//     </nav>
-//   );
-// }
-
-
-
-
-
-
-// import { FaGraduationCap, FaBriefcase, FaLaptopCode, FaEnvelope, FaTools } from "react-icons/fa";
-// import { FaBeer } from 'react-icons/fa'; 
-
-// export default function Navbar() {
-//   return (
-//     <nav className="navbar">
-//       <ul>
-//         <li>
-//           <a href="#education">
-//             <FaGraduationCap className="nav-icon" /> Education
-//           </a>
-//         </li>
-//         <li>
-//           <a href="#skills">
-//             <FaTools className="nav-icon" /> Skills
-//           </a>
-//         </li>
-       
-//         <li>
-//           <a href="#projects">
-//             <FaLaptopCode className="nav-icon" /> Projects
-//           </a>
-//         </li>
-//          <li>
-//           <a href="#achievements">
-//             <FaBriefcase className="nav-icon" /> Achievements
-//           </a>
-//         </li>
-//         <li>
-//           <a href="#contact">
-//             <FaEnvelope className="nav-icon" /> Contact
-//           </a>
-//         </li>
-//       </ul>
-//     </nav>
-//   );
-// }
-
-
-
-
-
-
-
-
-
-
-
-
 import { useState } from "react";
-import { FaGraduationCap, FaBriefcase, FaLaptopCode, FaEnvelope, FaTools, FaBars, FaTimes } from "react-icons/fa";
+import {
+  FaGraduationCap, FaTools, FaLaptopCode, FaEnvelope, FaTrophy, FaBriefcase
+} from "react-icons/fa";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-
-  // Function to close menu when a link is clicked
-  const closeMenu = () => setIsOpen(false);
+  const toggle = () => setIsOpen(!isOpen);
+  const close = () => setIsOpen(false);
 
   return (
-    <nav className="navbar">
-      
-      {/* 1. Mobile Hamburger Icon */}
-      <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
-        {isOpen ? <FaTimes /> : <FaBars />}
+    <>
+      <nav className="navbar">
+        {/* Brand — monospace tag style */}
+        <span className="navbar-brand">
+          <span>{"<"}</span>VANAM PRASHANTH<span>{"/>"}</span>
+        </span>
+
+        {/* Hamburger with animated bars */}
+        <button
+          className={`hamburger ${isOpen ? "open" : ""}`}
+          onClick={toggle}
+          aria-label="Toggle menu"
+        >
+          <div className="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+      </nav>
+
+      {/* Full-screen slide-in menu */}
+      <div className={`nav-menu ${isOpen ? "active" : ""}`}>
+        <a href="#education" onClick={close}>
+          <span className="nav-dot"></span>
+          <FaGraduationCap className="nav-icon" /> Education
+        </a>
+        <a href="#skills" onClick={close}>
+          <span className="nav-dot"></span>
+          <FaTools className="nav-icon" /> Skills
+        </a>
+        <a href="#experience" onClick={close}>
+          <span className="nav-dot"></span>
+          <FaBriefcase className="nav-icon" /> Experience
+        </a>
+        <a href="#projects" onClick={close}>
+          <span className="nav-dot"></span>
+          <FaLaptopCode className="nav-icon" /> Projects
+        </a>
+        <a href="#achievements" onClick={close}>
+          <span className="nav-dot"></span>
+          <FaTrophy className="nav-icon" /> Achievements
+        </a>
+        <a href="#contact" onClick={close}>
+          <span className="nav-dot"></span>
+          <FaEnvelope className="nav-icon" /> Contact
+        </a>
       </div>
-
-      {/* 2. Nav Links (Desktop & Mobile) */}
-      {/* If isOpen is true, we add the 'active' class to show the mobile menu */}
-      <ul className={isOpen ? "nav-menu active" : "nav-menu"}>
-        
-        <li className="nav-item">
-          <a href="#education" onClick={closeMenu}>
-            <FaGraduationCap className="nav-icon" /> Education
-          </a>
-        </li>
-        
-        <li className="nav-item">
-          <a href="#skills" onClick={closeMenu}>
-            <FaTools className="nav-icon" /> Skills
-          </a>
-        </li>
-        
-        <li className="nav-item">
-          <a href="#projects" onClick={closeMenu}>
-            <FaLaptopCode className="nav-icon" /> Projects
-          </a>
-        </li>
-        
-        <li className="nav-item">
-          <a href="#achievements" onClick={closeMenu}>
-            <FaBriefcase className="nav-icon" /> Achievements
-          </a>
-        </li>
-        
-        <li className="nav-item">
-          <a href="#contact" onClick={closeMenu}>
-            <FaEnvelope className="nav-icon" /> Contact
-          </a>
-        </li>
-
-      </ul>
-    </nav>
+    </>
   );
 }

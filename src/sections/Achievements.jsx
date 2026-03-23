@@ -1,102 +1,35 @@
-
-
-// import useScrollAnimation from "../hooks/useScrollAnimation";
-
-// export default function Achievements() {
-//   const ref = useScrollAnimation();
-
-//   return (
-//     <section ref={ref} className="animate">
-//       <h2 className="section-title">Achievements</h2>
-
-//       <div className="card">
-//         ServiceNow System Administrator Certification
-//       </div>
-//       <div className="card">
-//         Oracle Data Platform 2025 Certified Foundations Associate
-//       </div>
-//       <div className="card">
-//         Oracle Cloud Infrastructure 2025 Certified Foundations Associate
-//       </div>
-//     </section>
-//   );
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import useScrollAnimation from "../hooks/useScrollAnimation";
-import { FaFolder } from "react-icons/fa";
+import { FaFolder, FaExternalLinkAlt } from "react-icons/fa";
 
-// Data for your certifications
+// FIXED: removed duplicates, kept only 3 strong certs
 const achievementsData = [
   {
     title: "ServiceNow System Administrator Certification",
     org: "ServiceNow",
     date: "July, 2025",
     category: "System Administration",
-    // ServiceNow Logo URL
-    image: "https://upload.wikimedia.org/wikipedia/commons/1/1c/ServiceNow_logo.svg", 
-    logoBg: "#1a2b3c" // Dark Blue background for logo
+    image: "https://upload.wikimedia.org/wikipedia/commons/1/1c/ServiceNow_logo.svg",
+    logoBg: "#0b3452",
+    verify: "https://www.servicenow.com/",
   },
   {
     title: "Oracle Data Platform 2025 Certified Foundations Associate",
     org: "Oracle",
-    date: "July, 2025 - July, 2027",
+    date: "July 2025 – July 2027",
     category: "Database Management",
-    // Oracle Logo URL
     image: "https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg",
-    logoBg: "#ffffff" // White background for logo
+    logoBg: "#ffffff",
+    verify: "https://education.oracle.com/",
   },
   {
     title: "Oracle Cloud Infrastructure 2025 Certified Foundations Associate",
     org: "Oracle",
-    date: "Aug, 2025 - Aug, 2027",
-    category: "Database Management",
-    // Oracle Logo URL
+    date: "Aug 2025 – Aug 2027",
+    category: "Cloud Computing",
     image: "https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg",
-    logoBg: "#ffffff" // White background for logo
+    logoBg: "#ffffff",
+    verify: "https://education.oracle.com/",
   },
-   {
-    title: "ServiceNow System Administrator Certification",
-    org: "ServiceNow",
-    date: "July, 2025",
-    category: "System Administration",
-    // ServiceNow Logo URL
-    image: "https://upload.wikimedia.org/wikipedia/commons/1/1c/ServiceNow_logo.svg", 
-    logoBg: "#1a2b3c" // Dark Blue background for logo
-  },
-  {
-    title: "Oracle Data Platform 2025 Certified Foundations Associate",
-    org: "Oracle",
-    date: "July, 2025 - July, 2027",
-    category: "Database Management",
-    // Oracle Logo URL
-    image: "https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg",
-    logoBg: "#ffffff" // White background for logo
-  },
-  {
-    title: "Oracle Cloud Infrastructure 2025 Certified Foundations Associate",
-    org: "Oracle",
-    date: "Aug, 2025 - Aug, 2027",
-    category: "Database Management",
-    // Oracle Logo URL
-    image: "https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg",
-    logoBg: "#ffffff" // White background for logo
-  }
 ];
 
 export default function Achievements() {
@@ -109,29 +42,37 @@ export default function Achievements() {
       <div className="achievements-container">
         {achievementsData.map((item, index) => (
           <div className="achievement-card" key={index}>
-            
-            {/* LEFT SIDE: Text Content */}
+
             <div className="achievement-content">
               <h3>{item.title}</h3>
               <p className="achievement-org">{item.org}</p>
-              
+
               <div className="achievement-meta">
                 <span className="meta-date">{item.date}</span>
-                
-                {/* Folder Icon + Category */}
                 <span className="meta-category">
-                  <FaFolder className="meta-icon" /> 
+                  <FaFolder className="meta-icon" />
                   {item.category}
                 </span>
+                {item.verify && (
+                  <a
+                    href={item.verify}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="meta-date"
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    <FaExternalLinkAlt className="meta-icon" />
+                    Verify
+                  </a>
+                )}
               </div>
             </div>
 
-            {/* RIGHT SIDE: Logo Image */}
-            <div 
-              className="achievement-img-wrapper" 
+            <div
+              className="achievement-img-wrapper"
               style={{ backgroundColor: item.logoBg }}
             >
-               <img src={item.image} alt={item.org} />
+              <img src={item.image} alt={item.org} />
             </div>
 
           </div>
