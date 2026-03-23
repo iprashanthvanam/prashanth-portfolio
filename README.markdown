@@ -14,7 +14,7 @@
 
 <div align="center">
 
-# 🚀 V Prashanth — Developer Portfolio
+# Vanam Prashanth — Developer Portfolio
 ### Personal Portfolio Website | React 19 + Vite 7 + IDE-Inspired Dark UI
 
 *A blazing-fast, data-driven personal portfolio built with React 19 and Vite — featuring a VS Code Dark+ inspired design system, animated terminal hero, scroll-reveal animations, and a live Web3Forms contact form.*
@@ -28,9 +28,9 @@
 <br/>
 
 <!-- HERO SCREENSHOT -->
-<img src="src/images/Screenshot 2026-02-08 173635.png" alt="Portfolio Hero Section" width="900"/>
+<img src="images/hero section.png" alt="Portfolio Hero Section" width="900"/>
 
-> **V Prashanth Portfolio** — IDE-inspired dark aesthetic with animated terminal, scroll-reveal sections, and a data-driven architecture
+> **Vanam Prashanth Portfolio** — IDE-inspired dark aesthetic with animated terminal, scroll-reveal sections, and a data-driven architecture
 
 </div>
 
@@ -85,7 +85,7 @@ A complete visual walkthrough of every section in the portfolio.
 ### 🚀 Hero Section
 
 <div align="center">
-  <img src="src/images/Screenshot 2026-02-08 173635.png" alt="Hero Section" width="860"/>
+  <img src="images/hero section.png" alt="Hero Section" width="860"/>
   <br/><br/>
   <sub><b>Hero section.</b> Profile photo, name, role tags, animated terminal box that types out identity lines (<code>whoami</code>, <code>status</code>, <code>location</code>) one by one. Download CV button + Contact Me CTA + social links (LinkedIn, GitHub, LeetCode).</sub>
 </div>
@@ -95,7 +95,7 @@ A complete visual walkthrough of every section in the portfolio.
 ### 🎓 Education
 
 <div align="center">
-  <img src="src/images/Screenshot 2026-02-08 173652.png" alt="Education Section" width="860"/>
+  <img src="images/education.png" alt="Education Section" width="860"/>
   <br/><br/>
   <sub><b>Education timeline.</b> Vertical card timeline showing B-Tech (TKREC, 2023–2026), Diploma (Government Model Residential Polytechnic, 2016–2019), and Secondary Education — each with a graduation cap icon, year badge, degree title, and institution name. Scroll-reveal animation on entry.</sub>
 </div>
@@ -105,9 +105,19 @@ A complete visual walkthrough of every section in the portfolio.
 ### 🛠️ Skills
 
 <div align="center">
-  <img src="src/images/Screenshot 2026-02-08 173711.png" alt="Skills Section" width="860"/>
+  <img src="images/skills.png" alt="Skills Section" width="860"/>
   <br/><br/>
   <sub><b>Skills grid.</b> 18 technologies displayed as interactive tag pills — Figma, React, Bootstrap, HTML5, CSS, Tailwind CSS, JavaScript, Java, Python, MySQL, PostgreSQL, MongoDB, Flask, Django, Git, AWS, MS Office. Scroll-triggered reveal animation on section entry.</sub>
+</div>
+
+---
+
+### 💼 Experience
+
+<div align="center">
+  <img src="images/experience.png" alt="Experience Section" width="860"/>
+  <br/><br/>
+  <sub><b>Experience timeline.</b> Card timeline showing the Testing Intern role at ETDC — Electronic Testing and Development Centre (STQC Lab, NABL accredited), November 2018 – May 2019. Data sourced from <code>experience.js</code>.</sub>
 </div>
 
 ---
@@ -115,7 +125,7 @@ A complete visual walkthrough of every section in the portfolio.
 ### 🚀 Projects
 
 <div align="center">
-  <img src="src/images/Screenshot 2026-02-08 173742.png" alt="Projects Section" width="860"/>
+  <img src="images/projects.png" alt="Projects Section" width="860"/>
   <br/><br/>
   <sub><b>Projects showcase.</b> Three project cards — Face Recognition System, The Pet Portal, and Plagiarism Analysis Application — each with a project image, description, tech stack tags, and dual action buttons (GitHub repo link + Live Demo link). Data sourced from <code>projects.js</code>.</sub>
 </div>
@@ -125,9 +135,9 @@ A complete visual walkthrough of every section in the portfolio.
 ### 🏆 Achievements
 
 <div align="center">
-  <img src="src/images/Screenshot 2026-02-08 173757.png" alt="Achievements Section" width="860"/>
+  <img src="images/achievements.png" alt="Achievements Section" width="860"/>
   <br/><br/>
-  <sub><b>Achievements & certifications.</b> Three certification cards — ServiceNow System Administrator (July 2025), Oracle Data Platform 2025 Foundations Associate, and Oracle Cloud Infrastructure 2025 Foundations Associate — each with org logo, date range, category badge, and a Verify external link.</sub>
+  <sub><b>Achievements & certifications.</b> Three certification cards — ServiceNow System Administrator (July 2025), Oracle Data Platform 2025 Foundations Associate (July 2025 – July 2027), and Oracle Cloud Infrastructure 2025 Foundations Associate (Aug 2025 – Aug 2027) — each with org logo, date range, category badge, and a Verify external link.</sub>
 </div>
 
 ---
@@ -135,9 +145,9 @@ A complete visual walkthrough of every section in the portfolio.
 ### 📞 Contact
 
 <div align="center">
-  <img src="src/images/Screenshot 2026-02-08 173805.png" alt="Contact Section" width="860"/>
+  <img src="images/contact page.png" alt="Contact Section" width="860"/>
   <br/><br/>
-  <sub><b>Contact section.</b> Left side: floating-label contact form (Name, Email, Message) integrated with Web3Forms API — real messages land directly in email inbox. Right side: contact details (email, phone, location) and social links row (GitHub, LinkedIn, LeetCode). Footer: "Made with ❤️ by V Prashanth".</sub>
+  <sub><b>Contact section.</b> Left side: floating-label contact form (Name, Email, Message) integrated with Web3Forms API — real messages land directly in the inbox. Right side: contact details (email, phone, location) and social links row (GitHub, LinkedIn, LeetCode). Footer: "Made with ❤️ by V Prashanth".</sub>
 </div>
 
 ---
@@ -301,8 +311,8 @@ export const experience = [
 ];
 ```
 
-### `src/sections/Achievements.jsx`
-Achievements are currently defined inline in the component as an array. To add a new certification, add an object to `achievementsData` with `title`, `org`, `date`, `category`, `image`, `logoBg`, and `verify` fields.
+### Achievements — `src/sections/Achievements.jsx`
+Achievements are defined inline as an array. To add a new certification, append an object to `achievementsData` with `title`, `org`, `date`, `category`, `image`, `logoBg`, and `verify` fields.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -313,62 +323,62 @@ Achievements are currently defined inline in the component as an array. To add a
 ```
 prashanth-portfolio/
 │
+├── images/                               # 📸 Portfolio screenshots (README images)
+│   ├── hero section.png
+│   ├── education.png
+│   ├── skills.png
+│   ├── experience.png
+│   ├── projects.png
+│   ├── achievements.png
+│   └── contact page.png
+│
 ├── public/
-│   ├── github.svg                    # Custom GitHub icon (orange accent)
-│   ├── linkedin.svg                  # Custom LinkedIn icon
-│   ├── leetcode.svg                  # Custom LeetCode icon
-│   ├── vite.svg                      # Vite icon
-│   └── VANAM PRASHANTH SDE.pdf       # Downloadable CV
+│   ├── github.svg                        # Custom GitHub icon (orange accent)
+│   ├── linkedin.svg                      # Custom LinkedIn icon
+│   ├── leetcode.svg                      # Custom LeetCode icon
+│   ├── vite.svg
+│   └── VANAM PRASHANTH SDE.pdf           # Downloadable CV
 │
 ├── src/
 │   ├── assets/
-│   │   ├── face.png                  # Face Recognition System project image
-│   │   ├── pet.png                   # The Pet Portal project image
-│   │   ├── plag.png                  # Plagiarism App project image
-│   │   ├── profile.jpeg              # Hero profile photo
-│   │   ├── rural_dev.svg             # Rural Dev project SVG illustration
-│   │   └── education.jpg             # Education section image
+│   │   ├── face.png                      # Face Recognition project image
+│   │   ├── pet.png                       # The Pet Portal project image
+│   │   ├── plag.png                      # Plagiarism App project image
+│   │   ├── profile.jpeg                  # Hero profile photo
+│   │   └── rural_dev.svg                 # Rural Dev SVG illustration
 │   │
 │   ├── components/
-│   │   ├── Navbar.jsx                # Sticky navbar with hamburger + section links
-│   │   └── ScrollTop.jsx             # Fixed scroll-to-top button
+│   │   ├── Navbar.jsx                    # Sticky navbar with hamburger + links
+│   │   └── ScrollTop.jsx                 # Fixed scroll-to-top button
 │   │
-│   ├── data/                         # ← EDIT THESE TO UPDATE CONTENT
-│   │   ├── projects.js               # Project cards data
-│   │   ├── skills.js                 # Skills pill list
-│   │   ├── education.js              # Education timeline entries
-│   │   └── experience.js             # Experience timeline entries
+│   ├── data/                             # ← EDIT THESE TO UPDATE CONTENT
+│   │   ├── projects.js
+│   │   ├── skills.js
+│   │   ├── education.js
+│   │   └── experience.js
 │   │
 │   ├── hooks/
-│   │   └── useScrollAnimation.js     # Intersection Observer hook for scroll-reveal
-│   │
-│   ├── images/                       # Portfolio screenshot images (for README)
-│   │   ├── Screenshot 2026-02-08 173635.png   # Hero
-│   │   ├── Screenshot 2026-02-08 173652.png   # Education
-│   │   ├── Screenshot 2026-02-08 173711.png   # Skills
-│   │   ├── Screenshot 2026-02-08 173742.png   # Projects
-│   │   ├── Screenshot 2026-02-08 173757.png   # Achievements
-│   │   └── Screenshot 2026-02-08 173805.png   # Contact
+│   │   └── useScrollAnimation.js         # Intersection Observer scroll-reveal hook
 │   │
 │   ├── sections/
-│   │   ├── Hero.jsx                  # Animated terminal hero + profile + CTAs
-│   │   ├── Education.jsx             # Timeline card layout
-│   │   ├── Skills.jsx                # Tag pill grid
-│   │   ├── Experience.jsx            # Experience timeline
-│   │   ├── Projects.jsx              # Project cards with GitHub + Demo links
-│   │   ├── Achievements.jsx          # Certification cards with org logos
-│   │   └── Contact.jsx               # Web3Forms contact form + info panel
+│   │   ├── Hero.jsx                      # Animated terminal hero + profile + CTAs
+│   │   ├── Education.jsx                 # Timeline card layout
+│   │   ├── Skills.jsx                    # Tag pill grid
+│   │   ├── Experience.jsx                # Experience timeline
+│   │   ├── Projects.jsx                  # Project cards
+│   │   ├── Achievements.jsx              # Certification cards
+│   │   └── Contact.jsx                   # Web3Forms form + info panel
 │   │
-│   ├── App.jsx                       # Root component — assembles all sections
-│   ├── App.css                       # Section-level styles (hero, cards, grid)
-│   ├── index.css                     # Design system — CSS variables, reset, fonts
-│   └── main.jsx                      # React 19 entry point (createRoot)
+│   ├── App.jsx                           # Root — assembles all sections
+│   ├── App.css                           # Section-level styles
+│   ├── index.css                         # Design system CSS variables
+│   └── main.jsx                          # React 19 entry point
 │
-├── index.html                        # HTML entry — Google Fonts, meta tags, root div
-├── vite.config.js                    # Vite config with React plugin
-├── vercel.json                       # Vercel output directory config
-├── package.json                      # Dependencies (React 19, react-icons, Vite 7)
-├── eslint.config.js                  # ESLint with react-hooks + react-refresh
+├── index.html                            # HTML shell — Google Fonts, meta tags
+├── vite.config.js
+├── vercel.json                           # { "outputDirectory": "dist" }
+├── package.json
+├── eslint.config.js
 └── README.markdown
 ```
 
@@ -406,15 +416,13 @@ npm run dev
 
 Open your browser at `http://localhost:5173`
 
-Vite's Hot Module Replacement (HMR) will update the browser instantly as you edit any file.
-
 ### Build for Production
 
 ```bash
 npm run build
 ```
 
-Output goes to `dist/`. The build is optimised, tree-shaken, and minified by Vite.
+Output goes to `dist/`. Vite optimises, tree-shakes, and minifies automatically.
 
 ### Preview Production Build Locally
 
@@ -436,7 +444,7 @@ npm run lint
 
 ### Update Personal Info
 
-Edit `src/sections/Hero.jsx` — update the terminal lines, name, role text, and button behaviour:
+Edit `src/sections/Hero.jsx` — update the terminal lines, name, and role text:
 
 ```jsx
 const TERMINAL_LINES = [
@@ -474,7 +482,7 @@ export const skills = [
 
 ### Replace the CV
 
-Replace `public/VANAM PRASHANTH SDE.pdf` with your updated PDF. Keep the same filename, or update the filename reference in `src/sections/Hero.jsx`:
+Replace `public/VANAM PRASHANTH SDE.pdf` with your updated PDF, then update the reference in `src/sections/Hero.jsx`:
 
 ```jsx
 const cvUrl = "/YOUR_CV_FILENAME.pdf";
@@ -483,13 +491,13 @@ link.download = "YOUR_CV_FILENAME.pdf";
 
 ### Update Contact Form
 
-The contact form uses [Web3Forms](https://web3forms.com/). Replace the access key in `src/sections/Contact.jsx` with your own:
+Replace the Web3Forms access key in `src/sections/Contact.jsx`:
 
 ```jsx
 formData.append("access_key", "YOUR_WEB3FORMS_ACCESS_KEY");
 ```
 
-Get a free access key at [web3forms.com](https://web3forms.com) — no backend required.
+Get a free key at [web3forms.com](https://web3forms.com) — no backend required.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -515,11 +523,11 @@ git push origin main
 - Import `iprashanthvanam/prashanth-portfolio`
 - Framework: **Vite** (auto-detected)
 - Build Command: `npm run build`
-- Output Directory: `dist` (set in `vercel.json`)
+- Output Directory: `dist`
 
 **3. Deploy**
 
-Click **Deploy** — Vercel builds and deploys automatically. Every push to `main` triggers a new deployment.
+Click **Deploy** — every push to `main` triggers an automatic redeployment.
 
 > **`vercel.json`** is already configured:
 > ```json
@@ -561,7 +569,7 @@ Click **Deploy** — Vercel builds and deploys automatically. Every push to `mai
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-You are free to use this portfolio as a template for your own — just swap out the personal content (name, projects, CV, photos) and deploy.
+You are free to use this portfolio as a template — just swap out the personal content (name, projects, CV, photos) and deploy.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
